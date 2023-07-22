@@ -1,8 +1,9 @@
 export default defineAppConfig({
   docus: {
-    title: 'Docus',
-    description: 'The best place to start your documentation.',
+    title: 'Dev Gathering',
+    description: 'An Upper Middle Tennessee Software Development Meetup',
     image: 'https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png',
+
     socials: {
       twitter: 'nuxt_js',
       github: 'nuxt-themes/docus',
@@ -12,27 +13,41 @@ export default defineAppConfig({
         href: 'https://nuxt.com'
       }
     },
+
     github: {
       dir: '.starters/default/content',
       branch: 'main',
-      repo: 'docus',
-      owner: 'nuxt-themes',
+      repo: 'dev-gathering',
+      owner: 'heyshadowsmith',
       edit: true
     },
+
     aside: {
       level: 0,
       collapsed: false,
       exclude: []
     },
+
     main: {
       padded: true,
       fluid: true
     },
+
     header: {
       logo: true,
       showLinkIcon: true,
       exclude: [],
       fluid: true
-    }
+    },
+
+    footer: {
+      credits: {
+        icon: '',
+        text: 'A Shadow Smith idea',
+        href: 'https://shadowsmith.com'
+      }
+    },
+
+    titleTemplate: '%s · Dev Gathering'
   }
 })
